@@ -48,7 +48,7 @@ public class Handler implements RequestHandler<Object, String> {
 
         } catch (Exception e) {
 
-            response.put("errorMessage", "cannot send email error:" + e.getMessage());
+            response.put("message", "cannot send email error:" + e.getMessage());
             return gson.toJson(response);
         }
         // process input
